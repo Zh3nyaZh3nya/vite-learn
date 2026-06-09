@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
     root: '.',
@@ -6,15 +7,14 @@ export default defineConfig({
 
     resolve: {
         alias: {
-            utils: './src/utils',
-            scripts: './src/scripts',
-            css: './src/assets/css',
+            "@": path.resolve(__dirname, 'src'),
+            "@@": path.resolve(__dirname, '.'),
         }
     },
 
     build: {
         outDir: './dist',
-        assetsDir: './assets',
+        assetsDir: 'assets',
 
     }
 })
