@@ -3,7 +3,11 @@ import viteLogo from '@/assets/images/vite.svg'
 import heroImg from '@/assets/images/hero.png'
 
 export const mainPage = (): string => {
+    const version = ''
     return `<section id="center">
+      <div id="version site">
+        current version ${version}
+      </div>
       <div class="hero">
         <img src="${heroImg}" class="base" width="170" height="179" alt="hero">
         <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import path from 'path';
+import { version } from "./src/plugins/version"
 
 export default defineConfig({
     root: '.',
@@ -15,6 +16,7 @@ export default defineConfig({
     build: {
         outDir: './dist',
         assetsDir: 'assets',
+    },
 
-    }
+    plugins: [version()]
 })
