@@ -1,6 +1,6 @@
 {
   "name": "vite",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -11,6 +11,7 @@
   "private": true,
   "devDependencies": {
     "@types/node": "^25.9.1",
+    "sass": "^1.101.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.16"
   }

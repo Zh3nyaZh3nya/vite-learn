@@ -1,4 +1,4 @@
-import '@/assets/css/style.css';
+import '@/assets/css/style.scss';
 import { mainPage } from "@/scripts/mainPage";
 import { setupCounter } from '@/utils/counter.js'
 
