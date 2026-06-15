@@ -1,5 +1,9 @@
 /// <reference types="vite/client" />
 
+declare module 'virtual:file-count' {
+    export const fileCount: number
+}
+
 declare module '*.png' {
     const src: string
     export default src

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import path from 'path';
-import { version } from "./src/plugins/version"
+import { currentVersion } from "./src/plugins/currentVersion"
+import fileCount from "./src/plugins/fileCount";
 
 export default defineConfig({
     root: '.',
@@ -18,5 +19,5 @@ export default defineConfig({
         assetsDir: 'assets',
     },
 
-    plugins: [version()]
+    plugins: [currentVersion(), fileCount()]
 })

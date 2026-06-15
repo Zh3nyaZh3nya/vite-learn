@@ -1,12 +1,16 @@
 import javascriptLogo from '@/assets/images/js.svg'
 import viteLogo from '@/assets/images/vite.svg'
 import heroImg from '@/assets/images/hero.png'
+import { fileCount } from 'virtual:file-count'
 
 export const mainPage = (): string => {
     const version = ''
     return `<section id="center">
-      <div id="version site">
+      <div>
         current version ${version}
+      </div>
+      <div>
+        current count files in src ${fileCount}
       </div>
       <div class="hero">
         <img src="${heroImg}" class="base" width="170" height="179" alt="hero">
