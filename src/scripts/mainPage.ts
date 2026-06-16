@@ -2,10 +2,16 @@ import javascriptLogo from '@/assets/images/js.svg'
 import viteLogo from '@/assets/images/vite.svg'
 import heroImg from '@/assets/images/hero.png'
 import { fileCount } from 'virtual:file-count'
+import dayjs from 'dayjs'
+
+const now = dayjs()
 
 export const mainPage = (): string => {
     const version = ''
     return `<section id="center">
+      <div>
+        ${now.format('YYYY-MM-DD HH:mm:ss')}
+      </div>
       <div>
         current version ${version}
       </div>
